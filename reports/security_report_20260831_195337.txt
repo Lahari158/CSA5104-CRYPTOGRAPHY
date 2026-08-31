@@ -1,0 +1,51 @@
+==========================================================================
+          POST-QUANTUM CRYPTOGRAPHY (PQC) FILE TRANSFER SYSTEM            
+                        SECURITY AUDIT REPORT                             
+==========================================================================
+Report Generated At : 2026-08-31 19:53:37
+Classification      : RESTRICTED SECURITY REPORT
+--------------------------------------------------------------------------
+1. SYSTEM METRICS & SECURITY ANALYTICS
+--------------------------------------------------------------------------
+  Total System Users          : 2
+  Total Tracked Files         : 8
+  Successful User Logins      : 17
+  Failed User Logins          : 0
+  Files Encrypted (PQC/AES)   : 8
+  Files Transferred           : 8
+  Integrity Verifications     : 21
+  Integrity Check Failures    : 6
+  Access Denied Events        : 0
+  Total Logged Audit Events   : 122
+--------------------------------------------------------------------------
+2. RECENT SECURITY AUDIT TRAIL (Last 25 Events)
+--------------------------------------------------------------------------
+Date/Time            | User         | Action                 | File               | Status         
+-----------------------------------------------------------------------------------------------
+2026-08-31 19:53:37  | admin        | Add Permission         | test_sample.txt    | GRANTED Read to otheruser
+2026-08-31 19:53:37  | admin        | Access Check (Delete)  | test_sample.txt    | ACCESS GRANTED (Admin)
+2026-08-31 19:53:37  | testuser     | Access Check (Read)    | test_sample.txt    | ACCESS GRANTED (Owner)
+2026-08-31 19:53:37  | testuser     | Integrity Verification | test_sample.txt    | FAILED - Hash Mismatch
+2026-08-31 19:53:37  | testuser     | Signature Verification | test_sample.txt    | SUCCESS - Valid Signature
+2026-08-31 19:53:37  | testuser     | Digital Signature      | test_sample.txt    | SUCCESS        
+2026-08-31 19:53:37  | testuser     | Integrity Verification | test_sample.txt    | SUCCESS - Integrity Verified
+2026-08-31 19:53:37  | testuser     | Generate Hash          | test_sample.txt    | SUCCESS        
+2026-08-31 19:53:37  | testuser     | File Decryption        | test_sample.txt    | SUCCESS        
+2026-08-31 19:53:36  | testuser     | File Transfer          | enc_test_sample.txt.pqc | SUCCESS        
+2026-08-31 19:53:36  | testuser     | File Encryption        | test_sample.txt    | SUCCESS        
+2026-08-31 19:53:36  | testuser     | PQC Key Renewal        | PQC-TESTUSER-1788186216 | SUCCESS        
+2026-08-31 19:53:36  | testuser     | PQC Key Generation     | PQC-TESTUSER-1788186216 | SUCCESS        
+2026-08-31 19:53:36  | admin        | User Login             | N/A                | SUCCESS        
+2026-08-31 19:53:36  | testuser     | User Login             | N/A                | SUCCESS        
+2026-08-31 19:53:35  | testuser     | User Registration      | N/A                | SUCCESS        
+2026-08-31 19:46:16  | admin        | Signature Verification | Adaptive_Zero_Trust_Network_Access_Management_System (1) (2) (1).pptx | SUCCESS - Valid Signature
+2026-08-31 19:46:14  | admin        | Digital Signature      | Adaptive_Zero_Trust_Network_Access_Management_System (1) (2) (1).pptx | SUCCESS        
+2026-08-31 19:46:09  | admin        | Generate Hash          | Adaptive_Zero_Trust_Network_Access_Management_System (1) (2) (1).pptx | SUCCESS        
+2026-08-31 19:45:57  | admin        | File Decryption        | Adaptive_Zero_Trust_Network_Access_Management_System (1) (2) (1).pptx | SUCCESS        
+2026-08-31 19:45:52  | admin        | File Transfer          | enc_Adaptive_Zero_Trust_Network_Access_Management_System (1) (2) (1).pptx.pqc | SUCCESS        
+2026-08-31 19:45:45  | admin        | File Encryption        | Adaptive_Zero_Trust_Network_Access_Management_System (1) (2) (1).pptx | SUCCESS        
+2026-08-31 19:45:27  | admin        | User Login             | N/A                | SUCCESS        
+2026-08-31 19:45:14  | admin        | PQC Key Generation     | PQC-ADMIN-1788185714 | SUCCESS        
+2026-08-31 19:45:10  | admin        | PQC Key Generation     | PQC-ADMIN-1788185710 | SUCCESS        
+===============================================================================================
+End of Security Report.

@@ -1,0 +1,51 @@
+==========================================================================
+          POST-QUANTUM CRYPTOGRAPHY (PQC) FILE TRANSFER SYSTEM            
+                        SECURITY AUDIT REPORT                             
+==========================================================================
+Report Generated At : 2026-08-31 18:14:19
+Classification      : RESTRICTED SECURITY REPORT
+--------------------------------------------------------------------------
+1. SYSTEM METRICS & SECURITY ANALYTICS
+--------------------------------------------------------------------------
+  Total System Users          : 2
+  Total Tracked Files         : 5
+  Successful User Logins      : 10
+  Failed User Logins          : 0
+  Files Encrypted (PQC/AES)   : 5
+  Files Transferred           : 5
+  Integrity Verifications     : 14
+  Integrity Check Failures    : 4
+  Access Denied Events        : 0
+  Total Logged Audit Events   : 72
+--------------------------------------------------------------------------
+2. RECENT SECURITY AUDIT TRAIL (Last 25 Events)
+--------------------------------------------------------------------------
+Date/Time            | User         | Action                 | File               | Status         
+-----------------------------------------------------------------------------------------------
+2026-08-31 18:14:19  | admin        | Add Permission         | test_sample.txt    | GRANTED Read to otheruser
+2026-08-31 18:14:19  | admin        | Access Check (Delete)  | test_sample.txt    | ACCESS GRANTED (Admin)
+2026-08-31 18:14:19  | testuser     | Access Check (Read)    | test_sample.txt    | ACCESS GRANTED (Owner)
+2026-08-31 18:14:19  | testuser     | Integrity Verification | test_sample.txt    | FAILED - Hash Mismatch
+2026-08-31 18:14:19  | testuser     | Signature Verification | test_sample.txt    | SUCCESS - Valid Signature
+2026-08-31 18:14:19  | testuser     | Digital Signature      | test_sample.txt    | SUCCESS        
+2026-08-31 18:14:19  | testuser     | Integrity Verification | test_sample.txt    | SUCCESS - Integrity Verified
+2026-08-31 18:14:19  | testuser     | Generate Hash          | test_sample.txt    | SUCCESS        
+2026-08-31 18:14:19  | testuser     | File Decryption        | test_sample.txt    | SUCCESS        
+2026-08-31 18:14:19  | testuser     | File Transfer          | enc_test_sample.txt.pqc | SUCCESS        
+2026-08-31 18:14:19  | testuser     | File Encryption        | test_sample.txt    | SUCCESS        
+2026-08-31 18:14:19  | testuser     | PQC Key Renewal        | PQC-TESTUSER-1788180259 | SUCCESS        
+2026-08-31 18:14:19  | testuser     | PQC Key Generation     | PQC-TESTUSER-1788180259 | SUCCESS        
+2026-08-31 18:14:19  | admin        | User Login             | N/A                | SUCCESS        
+2026-08-31 18:14:19  | testuser     | User Login             | N/A                | SUCCESS        
+2026-08-31 18:14:19  | testuser     | User Registration      | N/A                | SUCCESS        
+2026-08-31 17:54:59  | admin        | Report Export (CSV)    | audit_logs_20260831_175459.csv | SUCCESS        
+2026-08-31 17:54:59  | admin        | Report Export (TXT)    | security_report_20260831_175459.txt | SUCCESS        
+2026-08-31 17:54:59  | admin        | Add Permission         | test_sample.txt    | GRANTED Read to otheruser
+2026-08-31 17:54:59  | admin        | Access Check (Delete)  | test_sample.txt    | ACCESS GRANTED (Admin)
+2026-08-31 17:54:59  | testuser     | Access Check (Read)    | test_sample.txt    | ACCESS GRANTED (Owner)
+2026-08-31 17:54:59  | testuser     | Integrity Verification | tampered_test_sample.txt | FAILED - Hash Mismatch
+2026-08-31 17:54:59  | testuser     | Signature Verification | test_sample.txt    | SUCCESS - Valid Signature
+2026-08-31 17:54:58  | testuser     | Digital Signature      | test_sample.txt    | SUCCESS        
+2026-08-31 17:54:58  | testuser     | Integrity Verification | test_sample.txt    | SUCCESS - Integrity Verified
+===============================================================================================
+End of Security Report.
