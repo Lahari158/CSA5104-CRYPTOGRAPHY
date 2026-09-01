@@ -8,3 +8,4 @@ __pycache__/
 *.db-shm
 test_sample.txt
 tampered_*
+venv/
